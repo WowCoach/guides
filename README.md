@@ -6,10 +6,18 @@
 
 ----
 
-### Download IntelliJ IDEA Community Edition: 
-可以到[官网](https://www.jetbrains.com/idea/download/#section=linux)下载并安装IntelliJ IDEA的社区版本，最终版功能更多，但需付费购买。
+### Install IntelliJ IDEA Community Edition: 
+可以到[官网下载](https://www.jetbrains.com/idea/download/#section=linux)并安装IntelliJ IDEA的社区版本，最终版功能更多，但需付费购买。
 
 如果使用的是Ubuntu系统，安装完成后可以先禁用Ubuntu冲突的快捷键，然后可以进行一些常用配置。
+
+- Import Settings to IntelliJ (See the attachment) , Backup yours first
+- Disable the Shade window action, assigned to Ctrl + Alt + S (Settings dialog)
+- Change or disable the Lock Screen action, assigned to Ctrl + Alt + L (Reformat code)
+- Disable the Move window action, assigned to Alt + F7 (Find usages)
+- Change or disable the Resize window action, assigned to Alt + F8 (Evaluate expression)
+- Change or disabled the fcitx switch virtual board, assigned to Ctrl+Alt+B (go to implement)
+- Change or disable Dashboard, assigned to Alt+F1(Select Target) - [How to do it](http://askubuntu.com/questions/271386/how-to-prevent-alt-f1-from-selecting-dash).
 
 ----
 

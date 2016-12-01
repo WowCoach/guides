@@ -11,13 +11,15 @@
 
 如果使用的是Ubuntu系统，安装完成后可以先禁用Ubuntu冲突的快捷键，然后可以进行一些常用配置。
 
-- Import Settings to IntelliJ (See the attachment) , Backup yours first
-- Disable the Shade window action, assigned to Ctrl + Alt + S (Settings dialog)
-- Change or disable the Lock Screen action, assigned to Ctrl + Alt + L (Reformat code)
-- Disable the Move window action, assigned to Alt + F7 (Find usages)
-- Change or disable the Resize window action, assigned to Alt + F8 (Evaluate expression)
-- Change or disabled the fcitx switch virtual board, assigned to Ctrl+Alt+B (go to implement)
-- Change or disable Dashboard, assigned to Alt+F1(Select Target) - [How to do it](http://askubuntu.com/questions/271386/how-to-prevent-alt-f1-from-selecting-dash).
+- Disable the Shade window action, assigned to Ctrl + Alt + S (Settings dialog).
+- Change or disable the Lock Screen action, assigned to Ctrl + Alt + L (Reformat code).
+- Disable the Move window action, assigned to Alt + F7 (Find usages).
+- Change or disable the Resize window action, assigned to Alt + F8 (Evaluate expression).
+- Change or disabled the fcitx switch virtual board, assigned to Ctrl + Alt + B (go to implement).
+- Change or disable Dashboard, assigned to Alt + F1 (Select Target) - [How to do it](http://askubuntu.com/questions/271386/how-to-prevent-alt-f1-from-selecting-dash).
+- You can import the [Settings](assets/settings.jar) to IntelliJ if you like. Backup yours first.
+
+Please refer to the [Keyboard Shortcuts You Cannot Miss](https://www.jetbrains.com/help/idea/2016.2/keyboard-shortcuts-you-cannot-miss.html) and do more practice.
 
 ----
 
@@ -31,13 +33,18 @@
 
 ----
 
+### 提交代码规范
+- Java代码必须删去没有引用到的包，Import语句为灰色即是，Mac可以通过`Control + Option + O`快捷键删去，Linux为`Ctrl + Alt + L`。
+- 类文件开始处不要出现 "/* xxx create xxx */" 这样自动生成的注释，在IntelliJ的settings中搜索`File and Code Template`，找到`File`页中的两个Header项，分别删除其中的模板内容后Apply即可。
+- 修改Import为非`*`模式，并且按照一定的顺序排序，在`Code Style -> Java -> Imports`中分别将Import数5和3修改大一些，在Import Layout中可以指定顺序，比如：`static all other imports`, `java.*`, `javax.*`, `org.*`, `net.*`, `com.*` and `all other imports`，通常根据Team情况而定。
+- 还有一个很好用的Feature，确保`Smart Keys -> User "CamelHumps" words`是开启的，这样在驼峰命名上可以智能移动光标。
+- 对于前端的代码，React风格校验不过的，在IntelliJ的settings中搜索到`Language & Frameworks`，找到`Javascript`修改为`JSX Harmony`后Apply即可。
+
+----
+
 ### 补充学习：
-可以提前看一些TDD内容，对于Java，写测试用的JUnit, Mockito.
+可以提前看一些TDD内容，对于Java的测试框架为JUnit, Mockito，构建工具为Gradle，可以提前查资料学习下。有时间可以了解一下OO, Refactor, Clean Code, Design Pattern, Functional programming, Java8等。
 
-有时间可以了解一下OO, Refactor, Clean Code, Design Pattern, Functional programming, Java 8
 
-推荐阅读:
 
-* [如何快速掌握一门新技术/语言/框架](http://www.cnblogs.com/huang0925/p/4735689.html)
-* [Java8 Tutorial](http://www.tutorialspoint.com/java8/)
-* [java8-tutorial](https://github.com/winterbe/java8-tutorial)
+

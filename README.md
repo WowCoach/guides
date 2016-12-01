@@ -11,12 +11,15 @@
 
 如果使用的是Ubuntu系统，安装完成后可以先禁用Ubuntu冲突的快捷键，然后可以进行一些常用配置。
 
+**Here’s a list of tweaks you need to make with default system key bindings so that they won’t interfere with IntelliJ IDEA actions:**
+
 - Disable the Shade window action, assigned to Ctrl + Alt + S (Settings dialog).
 - Change or disable the Lock Screen action, assigned to Ctrl + Alt + L (Reformat code).
 - Disable the Move window action, assigned to Alt + F7 (Find usages).
 - Change or disable the Resize window action, assigned to Alt + F8 (Evaluate expression).
 - Change or disabled the fcitx switch virtual board, assigned to Ctrl + Alt + B (go to implement).
-- Change or disable Dashboard, assigned to Alt + F1 (Select Target) - [How to do it](http://askubuntu.com/questions/271386/how-to-prevent-alt-f1-from-selecting-dash).
+- Change or disable Dashboard, assigned to Alt + F1 (Select Target) 
+	- You can refer [How to Do It](http://askubuntu.com/questions/271386/how-to-prevent-alt-f1-from-selecting-dash). Also can try the command: `sudo apt-get install compizconfig-settings-manager compiz-plugins-extra -y`
 - You can import the [Settings](assets/settings.jar) to IntelliJ if you like. Backup yours first.
 
 Please refer to the [Keyboard Shortcuts You Cannot Miss](https://www.jetbrains.com/help/idea/2016.2/keyboard-shortcuts-you-cannot-miss.html) and do more practice.
